@@ -6,3 +6,7 @@ form {
     background-color: lightgray;
     padding: 3%;
 }
+
+.navbar-nav {
+    margin-right: 95px;
+}
