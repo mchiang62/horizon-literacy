@@ -1,5 +1,7 @@
 body {
-  
+    background-image: url('images/backgroundcropped.png');
+
+    background-attachment: fixed;
 }
 
 form {
@@ -8,5 +10,17 @@ form {
 }
 
 .navbar-nav {
-    /* margin-right: 95px; */
+  
+}
+
+/* .container-fluid {
+    padding-right: 75px;
+    padding-left: 75px;
+    margin-right: auto;
+    margin-left: auto;
+
+} */
+
+.container {
+  
 }
