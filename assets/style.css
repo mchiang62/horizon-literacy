@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/backgroundcropped.png');
+    background-image: url('images/Background2.png');
 
     background-attachment: fixed;
 }
@@ -10,7 +10,7 @@ form {
 }
 
 .navbar-nav {
-  
+  margin-right: -15px;
 }
 
 /* .container-fluid {
@@ -24,3 +24,9 @@ form {
 .container {
   
 }
+
+::placeholder { 
+    color: red !important;
+
+}
+
