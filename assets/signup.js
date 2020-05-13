@@ -1,5 +1,23 @@
-// var form = document.getElementById("signup");
+console.log("hi melissa")
 
-// document.getElementById("myButton").addEventListener("click", function () {
-//   form.submit();
-// });
+function validation () {
+
+  var firstName = document.getElementById('inputFirstName').value;
+  var lastName = document.getElementById('inputLastName').value;
+
+  if (firstName == "") {
+    document.getElementById('fName').innerHTML= "Required";
+    return false
+  };
+
+  if (lastName == "") {
+    document.getElementById('lName').innerHTML= "Required";
+    return false
+  }
+
+
+
+}
+
+
+

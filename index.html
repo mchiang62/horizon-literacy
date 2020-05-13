@@ -8,22 +8,12 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 
 </head>
-
 
 
 <body>
@@ -49,21 +39,24 @@
                 <h1 id="heading">Volunteer Sign-up</h1>
             </div>
             <div class="col-lg-9">
-                <form id="signup">
+                <form id="signup" action="#" onclick="return validation ()">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="inputFirstName" placeholder="Bruce" required>
+                            <input type="text" class="form-control" id="inputFirstName" placeholder="Mark">
+                            <span id="fName" class="text-danger"></span>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class=" form-group col-md-6">
                             <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" id="inputLastName" placeholder="Wayne" required>
+                            <input type="text" class="form-control" id="inputLastName" placeholder="Twain">
+                            <span id="lName" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="birthday">Date of Birth</label>
                             <input type="text" class="form-control" id="inputBirthday" placeholder="MM/DD/YYYY">
+                            <span id="dob" class="text-danger"></span>
                         </div>
                         <div class="form-group col-md-8">
                             <label for="inputGender">Gender</label>
@@ -78,6 +71,7 @@
                     <div class="form-group">
                         <label for="inputAddress">Address</label>
                         <input type="text" class="form-control" id="inputAddress" placeholder="1234 Batcave St">
+                        <span id="address" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Suite/Apt</label>
@@ -87,6 +81,7 @@
                         <div class="form-group col-md-6">
                             <label for="inputCity">City</label>
                             <input type="text" class="form-control" id="inputCity" placeholder="Gotham">
+                            <span id="city" class="text-danger"></span>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="inputState">State</label>
@@ -148,16 +143,19 @@
                         <div class="form-group col-md-3">
                             <label for="inputZip">Zip</label>
                             <input type="text" class="form-control" id="inputZip" placeholder="12345">
+                            <span id="zip" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="phone">Phone</label>
+                            <label for="inputPhone">Phone</label>
                             <input type="text" class="form-control" id="inputPhone" placeholder="1-888-888-8888">
+                            <span id="phone" class="text-danger"></span>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Email</label>
                             <input type="email" class="form-control" id="inputEmail4" placeholder="Bruce@wayne.com">
+                            <span id="email" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-row">
@@ -209,7 +207,15 @@
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/signup.js"></script>
 </body>
 
