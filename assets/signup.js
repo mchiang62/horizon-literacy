@@ -1,5 +1,5 @@
-var form = document.getElementById("signup");
+// var form = document.getElementById("signup");
 
-document.getElementById("myButton").addEventListener("click", function () {
-  form.submit();
-});
+// document.getElementById("myButton").addEventListener("click", function () {
+//   form.submit();
+// });

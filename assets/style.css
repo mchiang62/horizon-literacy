@@ -1,3 +1,9 @@
+#heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900; 
+    /* regular font weight or at 900? */
+}
+
 body {
   background-image: url("images/Background3.png");
 
@@ -5,6 +11,7 @@ body {
 
   color: rgba(27,9,0,.80);
   font-size: 14pt;
+  font-family: 'Roboto', sans-serif;
 }
 
 form {
@@ -39,3 +46,5 @@ form {
     background-color: #3A607D;
     border: #3A607D;
 }
+
+
