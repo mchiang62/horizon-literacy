@@ -47,4 +47,24 @@ form {
     border: #3A607D;
 }
 
+.form-group span{
+    visibility: hidden;
+    font-size: 12px;
+
+}
+.form-group span{
+    visibility: hidden;
+    font-size: 12px;
+
+}
+.form-group.error input{
+    border-color: red;
+    margin-bottom: -5px
+    
+}
+.form-group.error span{
+    visibility: visible;
+    
+}
+
 

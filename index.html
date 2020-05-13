@@ -39,24 +39,24 @@
                 <h1 id="heading">Volunteer Sign-up</h1>
             </div>
             <div class="col-lg-9">
-                <form id="signup" action="#" onclick="return validation ()">
+                <form id="signup" action="#" onsubmit="return validation ()">
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-6 error">
                             <label for="firstName">First Name</label>
                             <input type="text" class="form-control" id="inputFirstName" placeholder="Mark">
-                            <span id="fName" class="text-danger"></span>
+                            <span id="fName" class="text-danger">Required</span>
                         </div>
                         <div class=" form-group col-md-6">
                             <label for="lastName">Last Name</label>
                             <input type="text" class="form-control" id="inputLastName" placeholder="Twain">
-                            <span id="lName" class="text-danger"></span>
+                            <span id="lName" class="text-danger">Required</span>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="birthday">Date of Birth</label>
                             <input type="text" class="form-control" id="inputBirthday" placeholder="MM/DD/YYYY">
-                            <span id="dob" class="text-danger"></span>
+                            <span id="dob" class="text-danger">Required</span>
                         </div>
                         <div class="form-group col-md-8">
                             <label for="inputGender">Gender</label>
@@ -66,12 +66,13 @@
                                 <option>Male</option>
                                 <option>I would prefer not to disclose</option>
                             </select>
+                            <!-- <span id="gender" class="text-danger">Required</span> -->
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress">Address</label>
                         <input type="text" class="form-control" id="inputAddress" placeholder="1234 Batcave St">
-                        <span id="address" class="text-danger"></span>
+                        <span id="address" class="text-danger">Required</span>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress2">Suite/Apt</label>
@@ -81,7 +82,7 @@
                         <div class="form-group col-md-6">
                             <label for="inputCity">City</label>
                             <input type="text" class="form-control" id="inputCity" placeholder="Gotham">
-                            <span id="city" class="text-danger"></span>
+                            <span id="city" class="text-danger">Required</span>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="inputState">State</label>
@@ -143,19 +144,19 @@
                         <div class="form-group col-md-3">
                             <label for="inputZip">Zip</label>
                             <input type="text" class="form-control" id="inputZip" placeholder="12345">
-                            <span id="zip" class="text-danger"></span>
+                            <span id="zip" class="text-danger">Required</span>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputPhone">Phone</label>
                             <input type="text" class="form-control" id="inputPhone" placeholder="1-888-888-8888">
-                            <span id="phone" class="text-danger"></span>
+                            <span id="phone" class="text-danger">Required</span>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Email</label>
                             <input type="email" class="form-control" id="inputEmail4" placeholder="Bruce@wayne.com">
-                            <span id="email" class="text-danger"></span>
+                            <span id="email" class="text-danger">Required</span>
                         </div>
                     </div>
                     <div class="form-row">
