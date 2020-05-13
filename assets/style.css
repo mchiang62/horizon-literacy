@@ -1,16 +1,23 @@
 body {
-    background-image: url('images/Background2.png');
+  background-image: url("images/Background3.png");
 
-    background-attachment: fixed;
+  background-attachment: fixed;
+
+  color: rgba(27,9,0,.80);
+  font-size: 14pt;
 }
 
 form {
-    background-color: lightgray;
-    padding: 3%;
+  background-color: lightgray;
+  padding: 3%;
+  font-size: 16pt;
 }
 
 .navbar-nav {
   margin-right: -15px;
+}
+.navbar-brand {
+  margin-left: -15px;
 }
 
 /* .container-fluid {
@@ -22,11 +29,13 @@ form {
 } */
 
 .container {
-  
 }
 
-::placeholder { 
-    color: red !important;
-
+::placeholder {
+  color: rgba(27,9,0,.37) !important;
 }
 
+#myButton {
+    background-color: #3A607D;
+    border: #3A607D;
+}
