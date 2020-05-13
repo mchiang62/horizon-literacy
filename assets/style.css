@@ -1,7 +1,6 @@
 #heading {
-    font-family: 'Playfair Display', serif;
-    font-weight: 900; 
-    /* regular font weight or at 900? */
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
 }
 
 body {
@@ -9,19 +8,20 @@ body {
 
   background-attachment: fixed;
 
-  color: rgba(27,9,0,.80);
-  font-size: 14pt;
-  font-family: 'Roboto', sans-serif;
+  color: rgba(27, 9, 0, 0.8);
+  font-family: "Roboto", sans-serif;
 }
 
 form {
-  background-color: lightgray;
+  background-color: white;
   padding: 3%;
-  font-size: 16pt;
+  font-size: 14pt;
+  font-weight: 500;
 }
 
 .navbar-nav {
   margin-right: -15px;
+  /* color: #3a607d !important; */
 }
 .navbar-brand {
   margin-left: -15px;
@@ -39,32 +39,46 @@ form {
 }
 
 ::placeholder {
-  color: rgba(27,9,0,.37) !important;
+  color: rgba(27, 9, 0, 0.37) !important;
+  font-size: 16pt !important;
 }
 
 #myButton {
-    background-color: #3A607D;
-    border: #3A607D;
+  background-color: #3a607d;
+  border: #3a607d;
 }
 
-.form-group span{
-    visibility: hidden;
-    font-size: 12px;
-
-}
-.form-group span{
-    visibility: hidden;
-    font-size: 12px;
-
-}
-.form-group.error input{
-    border-color: red;
-    margin-bottom: -5px
-    
-}
-.form-group.error span{
-    visibility: visible;
-    
+.form-group span {
+  visibility: hidden;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
 }
 
+.form-group.error input {
+  border-color: red;
+  margin-bottom: -5px;
+}
 
+/* .form-group p {
+visibility: hidden;
+} */
+
+/* .form-group.error p.oops {
+  font-size: 12px;
+  visibility: visible;
+} */
+
+#helpText {
+  font-size: 13pt;
+  color: rgba(27, 9, 0, 0.37);
+  font-weight: 400;
+
+}
+
+.form-group.error span {
+  visibility: visible;
+}
+
+.form-group {
+  /* margin-bottom: -4px; */
+}
