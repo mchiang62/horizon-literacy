@@ -1,32 +1,52 @@
-
 // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
+(function () {
+  "use strict";
+  window.addEventListener(
+    "load",
+    function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName("needs-validation");
+      // Get all form-groups in need of validation
+      var validateGroup = document.getElementsByClassName("validate-me");
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener(
+          "submit",
+          function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+              showErrorMsg();
+            } else {
+              displayThanks();
+            }
+
+            for (var i = 0; i < validateGroup.length; i++) {
+              validateGroup[i].classList.add("was-validated");
+            }
+          },
+          false
+        );
+      });
+    },
+    false
+  );
 })();
 
+function displayThanks() {
+  event.preventDefault();
+  $("form").empty();
+  $("form").html(
+    "<br><h1>Thank you!</h1><br><p>We will contact you back to let you know about further details.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
+  );
+  console.log("display thank you message");
+}
 
-
-
-
-
-
-
-
-
+function showErrorMsg(){
+  event.preventDefault();
+  $("#oopsError").html ("<p>error message</p>")
+  console.log("show error message")
+}
 
 // console.log("hi melissa");
 
@@ -69,9 +89,6 @@
 //     return false;
 //   }
 
-
-
-
 // }
 
 // function setErrorFor(input, message) {
@@ -82,24 +99,6 @@
 
 //   formGroup.className = "form-group error";
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const firstName = document.getElementById('inputFirstName').value;
 // const lastName = document.getElementById('inputLastName').value;

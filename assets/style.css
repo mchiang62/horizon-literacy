@@ -1,3 +1,5 @@
+
+
 a {
   color: rgba(27, 9, 0, 0.8) !important;
   font-family: "Roboto", sans-serif !important;
@@ -20,6 +22,7 @@ body {
 
   color: rgba(27, 9, 0, 0.8);
   font-family: "Roboto", sans-serif;
+  font-size: 13px 
 }
 
 form {
@@ -31,22 +34,12 @@ form {
 
 .navbar-nav {
   margin-right: -15px;
-  /* color: #3a607d !important; */
+
 }
 .navbar-brand {
   margin-left: -15px;
 }
 
-/* .container-fluid {
-    padding-right: 75px;
-    padding-left: 75px;
-    margin-right: auto;
-    margin-left: auto;
-
-} */
-
-.container {
-}
 
 ::placeholder {
   color: rgba(27, 9, 0, 0.37) !important;
@@ -54,7 +47,6 @@ form {
 }
 
 select {
-  /* color: rgba(27, 9, 0, 0.37) !important; */
   font-family: "Roboto", sans-serif !important;
 }
 
