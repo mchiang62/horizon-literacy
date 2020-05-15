@@ -59,20 +59,23 @@
                             <span id="lName" class="text-danger invalid-feedback">Required</span>
                         </div>
                     </div>
+
+                    
                     <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-4 validate-me">
                             <label for="birthday">Date of Birth</label>
-                            <input type="text" class="form-control" id="inputBirthday" placeholder="MM/DD/YYYY">
-                            <span id="dob" class="text-danger"></span>
+                            <input type="text" class="form-control" id="inputBirthday" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="MM/DD/YYYY" required>
+                            <span id="dob" class="text-danger invalid-feedback">Required</span>
                         </div>
-                        <div class="form-group col-md-8 category">
+                        <div class="form-group col-md-8 category validate-me">
                             <label for="inputGender">Gender</label>
-                            <select id="inputGender" class="form-control">
-                                    <option selected>Select</option>
-                                    <option>Female</option>
-                                    <option>Male</option>
-                                    <option>I would prefer not to disclose</option>
+                            <select id="inputGender" class="form-control" required>
+                                    <option value="" selected>Select</option>
+                                    <option value="female" >Female</option>
+                                    <option value="male" >Male</option>
+                                    <option value="noAnswer" >I would prefer not to disclose</option>
                             </select>
+                            <span id="gender" class="text-danger invalid-feedback">Required</span>
                         </div>
                     </div>
                     <div class="form-group">
@@ -154,15 +157,15 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-6 validate-me">
                             <label for="inputPhone">Phone</label>
-                            <input type="text" class="form-control" id="inputPhone" placeholder="1-888-888-8888">
-                            <span id="phone" class="text-danger"></span>
+                            <input type="text" class="form-control" id="inputPhone" placeholder="1-888-888-8888" pattern="^\d{1}-\d{3}-\d{3}-\d{4}$" required>
+                            <span id="phone" class="text-danger invalid-feedback">Required</span>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-6 validate-me">
                             <label for="inputEmail4">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Mark@twain.com">
-                            <span id="email" class="text-danger"></span>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Mark@twain.com" required>
+                            <span id="email" class="text-danger invalid-feedback">Required</span>
                         </div>
                     </div>
                     <div class="form-row">

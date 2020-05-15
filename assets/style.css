@@ -1,6 +1,5 @@
 a {
   color: rgba(27, 9, 0, 0.8) !important;
-  font-family: "Roboto", sans-serif !important;
 }
 
 a:hover {
@@ -23,8 +22,8 @@ body {
 }
 
 input {
-    font-family: "Roboto", sans-serif !important;
-    font-size: 16px !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px !important;
 }
 
 form {
@@ -34,12 +33,10 @@ form {
   font-weight: 500;
 }
 
-
 .category select {
-    font-size: 20px !important;
-    font-family: "Roboto", sans-serif !important;
+  font-size: 20px !important;
+  font-family: "Roboto", sans-serif !important;
 }
-
 
 option {
   font-family: "Roboto", sans-serif !important;
