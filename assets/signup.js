@@ -37,16 +37,19 @@ function displayThanks() {
   event.preventDefault();
   $("form").empty();
   $("form").html(
-    "<br><h1>Thank you!</h1><br><p>We will contact you back to let you know about further details.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
+    "<br><h1>Thank you!</h1><br><p>We will contact you back to let you know about further details.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
   );
   console.log("display thank you message");
 }
 
 function showErrorMsg(){
   event.preventDefault();
-  $("#oopsError").html ("<p>error message</p>")
+  $("#oopsError").html ("<p>ERROR: Oops, please fix the field(s) below and resubmit when finished.</p><br>")
   console.log("show error message")
 }
+
+
+
 
 // console.log("hi melissa");
 
