@@ -17,6 +17,7 @@
               event.preventDefault();
               event.stopPropagation();
               showErrorMsg();
+              scrollTop()
             } else {
               displayThanks();
             }
@@ -46,6 +47,10 @@ function showErrorMsg(){
   event.preventDefault();
   $("#oopsError").html ("<p>ERROR: Oops, please fix the field(s) below and resubmit when finished.</p><br>")
   console.log("show error message")
+}
+
+function scrollTop(){
+  $(window).scrollTop(0);
 }
 
 
