@@ -23,7 +23,8 @@ body {
 
 input {
   font-family: "Roboto", sans-serif !important;
-  font-size: 16px !important;
+  font-size: 16pt !important;
+  height: 38px !important;
 }
 
 form {
@@ -34,8 +35,9 @@ form {
 }
 
 .category select {
-  font-size: 20px !important;
+  font-size: 21px !important;
   font-family: "Roboto", sans-serif !important;
+  height: 38px !important;
 }
 
 option {
@@ -56,7 +58,8 @@ option {
 
 select {
   font-family: "Roboto", sans-serif !important;
-  -webkit-appearance: none !important;
+  /* -webkit-appearance: none !important; */
+  
 }
 
 #myButton {
@@ -69,60 +72,9 @@ span {
   font-family: "Roboto", sans-serif;
 }
 
-
-
-
-
-
-
-
-/* .box select {
-  -webkit-appearance: none;
-  color: blue;
-  appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-  -webkit-box-sizing: border-box;
-} */
-
-
-
-
-/* .dropdown-toggle::after {
-  display: none !important;
-} */
-
-/* .form-group span {
-  visibility: hidden;
-  font-size: 13px;
-  font-family: "Roboto", sans-serif;
-}
-
-.form-group.error input {
-  border-color: red;
-  font-family: "Roboto", sans-serif;
-}
-
-.form-group.error span {
-    visibility: visible;
-    font-size: 13px;
-    font-family: "Roboto", sans-serif;
-  } */
-
-/* .form-group p {
-visibility: hidden;
-} */
-
-/* .form-group.error p.oops {
-  font-size: 12px;
-  visibility: visible;
-} */
-
 #helpText {
   font-size: 13pt;
   color: rgba(27, 9, 0, 0.37);
   font-weight: 700;
 }
 
-/* .form-group {
-
-} */

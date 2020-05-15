@@ -45,7 +45,7 @@ function displayThanks() {
 
 function showErrorMsg(){
   event.preventDefault();
-  $("#oopsError").html ("<p>ERROR: Oops, please fix the field(s) below and resubmit when finished.</p><br>")
+  $("#oopsError").html ("ERROR: Oops, please fix the field(s) below and resubmit when finished")
   console.log("show error message")
 }
 
