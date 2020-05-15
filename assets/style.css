@@ -56,6 +56,7 @@ option {
 
 select {
   font-family: "Roboto", sans-serif !important;
+  -webkit-appearance: none !important;
 }
 
 #myButton {
@@ -68,9 +69,27 @@ span {
   font-family: "Roboto", sans-serif;
 }
 
-.dropdown-toggle::after {
+
+
+
+
+
+
+
+/* .box select {
+  -webkit-appearance: none;
+  color: blue;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  -webkit-box-sizing: border-box;
+} */
+
+
+
+
+/* .dropdown-toggle::after {
   display: none !important;
-}
+} */
 
 /* .form-group span {
   visibility: hidden;
