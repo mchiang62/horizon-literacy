@@ -1,3 +1,13 @@
+a {
+  color: rgba(27, 9, 0, 0.8) !important;
+  font-family: "Roboto", sans-serif !important;
+  
+}
+
+a:hover {
+    color: #3a607d !important;
+}
+
 #heading {
   font-family: "Playfair Display", serif;
   font-weight: 900;
@@ -43,12 +53,26 @@ form {
   font-size: 16pt !important;
 }
 
+select {
+  /* color: rgba(27, 9, 0, 0.37) !important; */
+  font-family: "Roboto", sans-serif !important;
+}
+
 #myButton {
   background-color: #3a607d;
   border: #3a607d;
 }
 
-.form-group span {
+span {
+  font-size: 13px !important;
+  font-family: "Roboto", sans-serif;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* .form-group span {
   visibility: hidden;
   font-size: 13px;
   font-family: "Roboto", sans-serif;
@@ -56,8 +80,14 @@ form {
 
 .form-group.error input {
   border-color: red;
-  margin-bottom: -5px;
+  font-family: "Roboto", sans-serif;
 }
+
+.form-group.error span {
+    visibility: visible;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+  } */
 
 /* .form-group p {
 visibility: hidden;
@@ -71,14 +101,9 @@ visibility: hidden;
 #helpText {
   font-size: 13pt;
   color: rgba(27, 9, 0, 0.37);
-  font-weight: 400;
-
+  font-weight: 700;
 }
 
-.form-group.error span {
-  visibility: visible;
-}
+/* .form-group {
 
-.form-group {
-  /* margin-bottom: -4px; */
-}
+} */

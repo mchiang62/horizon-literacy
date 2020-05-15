@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <!-- font awesome -->
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
     <link rel="stylesheet" href="assets/style.css">
 
 </head>
@@ -40,20 +42,20 @@
                 <h1 id="heading">Volunteer Sign-up</h1>
             </div>
             <div class="col-lg-9">
-                <form id="signup">
+                <form id="signup" class="needs-validation" novalidate>
                     <div class="form-group">
                         <!-- <p class="text-danger oops error">Oops</p> -->
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="inputFirstName" placeholder="Mark">
-                            <span id="fName" class="text-danger"></span>
+                        <div class="form-group col-md-6 validate-me">
+                            <label for="validationCustom01">First Name</label>
+                            <input type="text" class="form-control needs-validation" id="validationCustom01" placeholder="Mark" required>
+                            <span id="fName" class="text-danger invalid-feedback">Required</span>
                         </div>
                         <div class=" form-group col-md-6">
                             <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" id="inputLastName" placeholder="Twain">
-                            <span id="lName" class="text-danger"></span>
+                            <input type="text" class="form-control" id="inputLastName" placeholder="Twain" required>
+                            <span id="lName" class="text-danger invalid-feedback">Required</span>
                         </div>
                     </div>
                     <div class="form-row">
@@ -70,7 +72,6 @@
                                 <option>Male</option>
                                 <option>I would prefer not to disclose</option>
                             </select>
-                            <!-- <span id="gender" class="text-danger"></span> -->
                         </div>
                     </div>
                     <div class="form-group">
@@ -177,7 +178,7 @@
                             <label for="inputLanguages">Languages other than English</label>
                             <input type="text" class="form-control" id="inputLanguages"
                                 placeholder="French, Spanish, Chinese, etc...">
-                                <p id="helpText">Optional</p>
+                            <span id="helpText">Optional</span>
                         </div>
                     </div>
 
@@ -193,18 +194,20 @@
                             </select>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputEmployment">Employment status (optional)</label>
+                            <label for="inputEmployment">Employment status</label>
                             <select id="inputEmployment" class="form-control">
                                 <option selected>Select</option>
                                 <option>Employed</option>
                                 <option>Unemployed</option>
                                 <option>Retired</option>
                             </select>
+                            <span id="helpText">Optional</span>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputCompany">Place of employment</label>
                         <input type="text" class="form-control" id="inputCompany" placeholder="Indicate as needed">
+                        <span id="helpText">Optional</span>
                     </div>
                     <button type="submit" id="myButton" class="btn btn-primary">Submit</button>
                 </form>

@@ -1,49 +1,105 @@
-console.log("hi melissa");
 
-const form = document.getElementById("signup");
-const firstName = document.getElementById("inputFirstName");
-const lastName = document.getElementById("inputLastName");
-const birthday = document.getElementById("inputBirthday");
-const address = document.getElementById("inputAddress");
-const city = document.getElementById("inputCity");
-const zip = document.getElementById("inputZip");
-const phone = document.getElementById("inputPhone");
-const email = document.getElementById("inputEmail4");
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
 
-form.addEventListener("submit", function () {
-  event.preventDefault();
 
-  checkInputs();
-});
 
-function checkInputs() {
-  {
-    const fnameValue = firstName.value.trim();
-    const lnameValue = lastName.value.trim();
-    const birthdayValue = birthday.value.trim();
-    const addressValue = address.value.trim();
-    const cityValue = city.value.trim();
-    const zipValue = zip.value.trim();
-    const phoneValue = phone.value.trim();
-    const emailValue = email.value.trim();
 
-    if (fnameValue === "") {
-      // show error message
-      setErrorFor(firstName, "Required");
-    } else {
-      return false
-    }
-  }
-}
 
-function setErrorFor(input, message) {
-  const formGroup = input.parentElement;
-  const span = formGroup.querySelector('span');
 
-  span.innerHTML = message;
 
-  formGroup.className = "form-group error";
-}
+
+
+
+
+// console.log("hi melissa");
+
+// const form = document.getElementById("signup");
+// const firstName = document.getElementById("inputFirstName");
+// const lastName = document.getElementById("inputLastName");
+// const birthday = document.getElementById("inputBirthday");
+// const address = document.getElementById("inputAddress");
+// const city = document.getElementById("inputCity");
+// const zip = document.getElementById("inputZip");
+// const phone = document.getElementById("inputPhone");
+// const email = document.getElementById("inputEmail4");
+
+// form.addEventListener("submit", function () {
+//   event.preventDefault();
+
+//   checkInputs();
+// });
+
+// function checkInputs() {
+//   const fnameValue = firstName.value.trim();
+//   const lnameValue = lastName.value.trim();
+//   const birthdayValue = birthday.value.trim();
+//   const addressValue = address.value.trim();
+//   const cityValue = city.value.trim();
+//   const zipValue = zip.value.trim();
+//   const phoneValue = phone.value.trim();
+//   const emailValue = email.value.trim();
+
+//   if (fnameValue === "") {
+//     // show error message
+//     setErrorFor(firstName, "Required");
+//   } else {
+//     return false;
+//   }
+//   if (lnameValue === "") {
+//     // show error message
+//     setErrorFor(lastName, "Required last name");
+//   } else {
+//     return false;
+//   }
+
+
+
+
+// }
+
+// function setErrorFor(input, message) {
+//   const formGroup = input.parentElement;
+//   const span = formGroup.querySelector("span");
+
+//   span.innerHTML = message;
+
+//   formGroup.className = "form-group error";
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const firstName = document.getElementById('inputFirstName').value;
 // const lastName = document.getElementById('inputLastName').value;
