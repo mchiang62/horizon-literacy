@@ -16,8 +16,6 @@
             if (form.checkValidity() === false) {
               event.preventDefault();
               event.stopPropagation();
-              displayConfirmation();
-              // make sure to delete this function above
               showErrorMsg();
               scrollTop();
             } else {
@@ -53,6 +51,7 @@ function showErrorMsg() {
   $("#oopsError").html(
     "ERROR: Oops, please fix the field(s) below and resubmit when finished"
   );
+  $("#oopsError").css({ "margin-bottom": "42px", "margin-top": "-6px" });
   console.log("show error message");
 }
 

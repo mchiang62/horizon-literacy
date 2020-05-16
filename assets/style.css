@@ -6,6 +6,7 @@ a:hover {
   color: #3a607d !important;
 }
 
+
 #heading {
   font-family: "Playfair Display", serif;
   font-weight: 900;
@@ -29,9 +30,10 @@ input {
 
 form {
   background-color: white;
-  padding: 3%;
+  padding: 5%;
   font-size: 14pt;
   font-weight: 500;
+  border-radius: 10px;
 }
 
 .category select {
@@ -45,10 +47,14 @@ option {
 }
 
 .navbar-nav {
-  margin-right: -15px;
+  margin-right: -20px;
 }
 .navbar-brand {
-  margin-left: -15px;
+  margin-left: -20px;
+}
+
+#logo {
+
 }
 
 ::placeholder {
@@ -78,3 +84,12 @@ span {
   font-weight: 700;
 }
 
+#about {
+    margin-right: 55px;
+}
+#learn {
+    margin-right: 55px;
+}
+#volunteer {
+    margin-right: 55px;
+}
