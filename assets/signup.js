@@ -38,11 +38,11 @@
 function displayConfirmation() {
   event.preventDefault();
   $("form").empty();
-  $("form").html("<br><p>Thank you!</p>");
+  $("form").html("<p>Thank you!</p>");
   $("form").append(
     "<span>We will contact you back to let you know about further details.</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
   );
-  $("p").css({ "font-size": "20px", "font-weight": "700" });
+  $("p").css({ "font-size": "20px", "font-weight": "700", "margin-top": "50px" });
   console.log("display thank you message");
 }
 

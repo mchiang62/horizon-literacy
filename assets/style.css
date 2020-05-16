@@ -53,6 +53,11 @@ option {
   margin-left: -20px;
 }
 
+.navbar {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 #logo {
 
 }
@@ -71,6 +76,8 @@ select {
 #myButton {
   background-color: #3a607d;
   border: #3a607d;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 span {
@@ -92,4 +99,8 @@ span {
 }
 #volunteer {
     margin-right: 55px;
+}
+
+#footer {
+    margin-top: 100px;
 }
