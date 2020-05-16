@@ -1,5 +1,7 @@
 a {
   color: rgba(27, 9, 0, 0.8) !important;
+  font-size: 14pt !important;
+  font-weight: 500 !important;
 }
 
 a:hover {
@@ -10,6 +12,7 @@ a:hover {
 #heading {
   font-family: "Playfair Display", serif;
   font-weight: 900;
+  font-size: 43pt;
 }
 
 body {
@@ -19,7 +22,7 @@ body {
 
   color: rgba(27, 9, 0, 0.8);
   font-family: "Roboto", sans-serif;
-  font-size: 13px;
+  font-size: 13pt;
 }
 
 input {
@@ -58,10 +61,6 @@ option {
     margin-bottom: 20px;
 }
 
-#logo {
-
-}
-
 ::placeholder {
   color: rgba(27, 9, 0, 0.37) !important;
   font-size: 16pt !important;
@@ -81,7 +80,7 @@ select {
 }
 
 span {
-  font-size: 13px !important;
+  font-size: 13pt !important;
   font-family: "Roboto", sans-serif;
 }
 

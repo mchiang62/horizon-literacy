@@ -42,7 +42,7 @@ function displayConfirmation() {
   $("form").append(
     "<span>We will contact you back to let you know about further details.</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
   );
-  $("p").css({ "font-size": "20px", "font-weight": "700", "margin-top": "50px" });
+  $("p").css({ "font-size": "20pt", "font-weight": "700", "margin-top": "50px" });
   console.log("display thank you message");
 }
 
@@ -51,7 +51,7 @@ function showErrorMsg() {
   $("#oopsError").html(
     "ERROR: Oops, please fix the field(s) below and resubmit when finished"
   );
-  $("#oopsError").css({ "margin-bottom": "42px", "margin-top": "-6px" });
+  $("#oopsError").css({ "margin-bottom": "42px", "margin-top": "-6px", "font-size": "13pt" });
   console.log("show error message");
 }
 
