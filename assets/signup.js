@@ -16,10 +16,13 @@
             if (form.checkValidity() === false) {
               event.preventDefault();
               event.stopPropagation();
+              displayThanks();
+              // make sure to delete this function above
               showErrorMsg();
-              scrollTop()
+              scrollTop();
             } else {
               displayThanks();
+              scrollTop();
             }
 
             for (var i = 0; i < validateGroup.length; i++) {
@@ -37,26 +40,27 @@
 function displayThanks() {
   event.preventDefault();
   $("form").empty();
-  $("form").html(
-    "<br><h1>Thank you!</h1><br><p>We will contact you back to let you know about further details.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
+  $("form").html("<br><p>Thank you!</p>");
+  $("form").append(
+    "<span>We will contact you back to let you know about further details.</span><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>"
   );
+  $("p").css({"font-size": "20px",
+  "font-weight": "700",
+});
   console.log("display thank you message");
 }
 
-function showErrorMsg(){
+function showErrorMsg() {
   event.preventDefault();
-  $("#oopsError").html ("ERROR: Oops, please fix the field(s) below and resubmit when finished")
-  console.log("show error message")
+  $("#oopsError").html(
+    "ERROR: Oops, please fix the field(s) below and resubmit when finished"
+  );
+  console.log("show error message");
 }
 
-function scrollTop(){
+function scrollTop() {
   $(window).scrollTop(0);
 }
-
-
-
-
-
 
 // console.log("hi melissa");
 
