@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="281px" height="24px" viewBox="0 0 281 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 17</title>
+    <g id="Visual-Explorations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17" fill="#3A607D">
+            <text id="HORIZON-LITERACY" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="20" font-weight="400" letter-spacing="1.7057144">
+                <tspan x="60" y="20">HORIZON LITERACY</tspan>
+            </text>
+            <g id="Group-9" transform="translate(0.000000, 3.000000)" fill-rule="nonzero">
+                <g id="Group-12" transform="translate(0.000000, 7.000000)">
+                    <g id="Group-16" transform="translate(0.000000, 0.000000)">
+                        <path d="M6.15973253,0 C17.9425334,4.05063291 23.8708374,6.53164557 23.9446446,7.44303797 C24.0184518,8.35443038 24.0184518,9.87341772 23.9446446,12 C12.7849776,7.47826087 5.43493664,5.14914695 1.89452158,5.01265823 C-1.64589349,4.87616951 -0.224156504,3.20528343 6.15973253,0 Z" id="Path"></path>
+                        <path d="M32.1597325,0 C43.9425334,4.05063291 49.8708374,6.53164557 49.9446446,7.44303797 C50.0184518,8.35443038 50.0184518,9.87341772 49.9446446,12 C38.7849776,7.47826087 31.4349366,5.14914695 27.8945216,5.01265823 C24.3541065,4.87616951 25.7758435,3.20528343 32.1597325,0 Z" id="Path" transform="translate(38.000000, 6.000000) scale(-1, 1) translate(-38.000000, -6.000000) "></path>
+                    </g>
+                </g>
+                <path d="M14,6.40751036 C20.5894064,9.64526752 24.1877588,11.5094307 24.7950571,12 C25.8072209,11.4113169 35.286465,7.73204738 35.9949797,6.99619348 C36.1974125,5.52448568 30.2403331,0.145407255 24.9207043,0.00303041653 C21.3742851,-0.0918874758 17.7340503,2.04293917 14,6.40751036 Z" id="Path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
